@@ -1,0 +1,6 @@
+name: IFHTHSQ
+main: main.java.me.avankziar.ifhthsq.spigot.IFHTHSQ
+version: 1
+author: Avankziar
+api-version: 1.17
+description: A PlotSquared IFH Hook
