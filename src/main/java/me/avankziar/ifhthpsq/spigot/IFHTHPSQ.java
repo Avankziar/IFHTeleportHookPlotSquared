@@ -1,4 +1,4 @@
-package main.java.me.avankziar.ifhthsq.spigot;
+package main.java.me.avankziar.ifhthpsq.spigot;
 
 import java.util.logging.Logger;
 
@@ -9,13 +9,13 @@ import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
 import main.java.me.avankziar.ifh.spigot.teleport.Teleport;
-import main.java.me.avankziar.ifhthsq.spigot.database.YamlHandler;
-import main.java.me.avankziar.ifhthsq.spigot.database.YamlManager;
+import main.java.me.avankziar.ifhthpsq.spigot.database.YamlHandler;
+import main.java.me.avankziar.ifhthpsq.spigot.database.YamlManager;
 
-public class IFHTHSQ extends JavaPlugin
+public class IFHTHPSQ extends JavaPlugin
 {
 	public static Logger log;
-	private static IFHTHSQ plugin;
+	private static IFHTHPSQ plugin;
 	public String pluginName = "InterfaceHubTeleportHookPlotSquared";
 	private YamlHandler yamlHandler;
 	private YamlManager yamlManager;
@@ -28,12 +28,12 @@ public class IFHTHSQ extends JavaPlugin
 		log = getLogger();
 		
 		//https://patorjk.com/software/taag/#p=display&f=ANSI%20Regular&t=IFHTHSQ
-		log.info(" ██ ███████ ██   ██ ████████ ██   ██ ███████  ██████   | API-Version: "+plugin.getDescription().getAPIVersion());
-		log.info(" ██ ██      ██   ██    ██    ██   ██ ██      ██    ██  | Author: "+plugin.getDescription().getAuthors().toString());
-		log.info(" ██ █████   ███████    ██    ███████ ███████ ██    ██  | Plugin Website: "+plugin.getDescription().getWebsite());
-		log.info(" ██ ██      ██   ██    ██    ██   ██      ██ ██ ▄▄ ██  | Depend Plugins: "+plugin.getDescription().getDepend().toString());
-		log.info(" ██ ██      ██   ██    ██    ██   ██ ███████  ██████   | SoftDepend Plugins: "+plugin.getDescription().getSoftDepend().toString());
-		log.info("                                                 ▀▀    | LoadBefore: "+plugin.getDescription().getLoadBefore().toString());
+		log.info(" ██ ███████ ██   ██ ████████ ██   ██ ██████  ███████  ██████   | API-Version: "+plugin.getDescription().getAPIVersion());
+		log.info(" ██ ██      ██   ██    ██    ██   ██ ██   ██ ██      ██    ██  | Author: "+plugin.getDescription().getAuthors().toString());
+		log.info(" ██ █████   ███████    ██    ███████ ██████  ███████ ██    ██  | Plugin Website: "+plugin.getDescription().getWebsite());
+		log.info(" ██ ██      ██   ██    ██    ██   ██ ██           ██ ██ ▄▄ ██  | Depend Plugins: "+plugin.getDescription().getDepend().toString());
+		log.info(" ██ ██      ██   ██    ██    ██   ██ ██      ███████  ██████   | SoftDepend Plugins: "+plugin.getDescription().getSoftDepend().toString());
+		log.info("                                                         ▀▀    | LoadBefore: "+plugin.getDescription().getLoadBefore().toString());
 		
 		yamlHandler = new YamlHandler(this);
 	
@@ -47,7 +47,7 @@ public class IFHTHSQ extends JavaPlugin
 		log.info(pluginName + " is disabled!");
 	}
 
-	public static IFHTHSQ getPlugin()
+	public static IFHTHPSQ getPlugin()
 	{
 		return plugin;
 	}

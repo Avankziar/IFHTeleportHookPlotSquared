@@ -1,4 +1,4 @@
-package main.java.me.avankziar.ifhthsq.spigot.database;
+package main.java.me.avankziar.ifhthpsq.spigot.database;
 
 import java.util.LinkedHashMap;
 

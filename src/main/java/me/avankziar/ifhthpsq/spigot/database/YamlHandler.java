@@ -1,4 +1,4 @@
-package main.java.me.avankziar.ifhthsq.spigot.database;
+package main.java.me.avankziar.ifhthpsq.spigot.database;
 
 import java.io.File;
 import java.io.IOException;
@@ -9,15 +9,15 @@ import java.util.LinkedHashMap;
 import org.bukkit.configuration.InvalidConfigurationException;
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import main.java.me.avankziar.ifhthsq.spigot.IFHTHSQ;
+import main.java.me.avankziar.ifhthpsq.spigot.IFHTHPSQ;
 
 public class YamlHandler
 {
-	private IFHTHSQ plugin;
+	private IFHTHPSQ plugin;
 	private File config = null;
 	private YamlConfiguration cfg = new YamlConfiguration();
 
-	public YamlHandler(IFHTHSQ plugin)
+	public YamlHandler(IFHTHPSQ plugin)
 	{
 		this.plugin = plugin;
 		loadYamlHandler();
@@ -35,7 +35,7 @@ public class YamlHandler
 			yaml.load(file);
 		} catch (IOException | InvalidConfigurationException e) 
 		{
-			IFHTHSQ.log.severe(
+			IFHTHPSQ.log.severe(
 					"Could not load the %file% file! You need to regenerate the %file%! Error: ".replace("%file%", file.getName())
 					+ e.getMessage());
 			e.printStackTrace();
@@ -100,7 +100,7 @@ public class YamlHandler
 		config = new File(plugin.getDataFolder(), "config.yml");
 		if(!config.exists()) 
 		{
-			IFHTHSQ.log.info("Create config.yml...");
+			IFHTHPSQ.log.info("Create config.yml...");
 			try(InputStream in = plugin.getResource("default.yml"))
 			{
 				/*

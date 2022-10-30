@@ -1,4 +1,4 @@
-package main.java.me.avankziar.ifhthsq.general;
+package main.java.me.avankziar.ifhthpsq.general;
 
 import java.awt.Color;
 import java.util.ArrayList;

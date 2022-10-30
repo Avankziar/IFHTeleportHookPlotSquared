@@ -1,4 +1,4 @@
-package main.java.me.avankziar.ifhthsq.spigot.database;
+package main.java.me.avankziar.ifhthpsq.spigot.database;
 
 import java.util.ArrayList;
 import java.util.Arrays;
@@ -7,7 +7,7 @@ import java.util.List;
 
 import org.bukkit.configuration.file.YamlConfiguration;
 
-import main.java.me.avankziar.ifhthsq.spigot.database.Language.ISO639_2B;
+import main.java.me.avankziar.ifhthpsq.spigot.database.Language.ISO639_2B;
 
 public class YamlManager
 {
